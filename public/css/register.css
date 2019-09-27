@@ -1,0 +1,133 @@
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 20%;
+  border-radius: 5px;
+  background-color: #EAE7DC;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.register form {
+  width: 100%;
+}
+
+.register i {
+  margin: 0 20px;
+}
+
+.register label {
+  float: left;
+}
+
+.register input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.register button {
+  width: 50%;
+  padding: 14px 20px;
+  margin: 8px auto;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+  background-color: #E98074;
+  color: black;
+  font-size: 20px;
+}
+
+::placeholder { 
+  color: #EAE7DC;
+  opacity: 1;
+}
+
+.register .box {
+  text-align: left;
+  font-size: 12px;
+  border: 3px solid #8E8D8A;
+  border-radius: 15px;
+  color: #EAE7DC;
+  background-color: #E98074;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register ul {
+  list-style: none;
+}
+
+.register #mood {
+  margin: 20px 0px;
+}
+
+@media (min-width: 1281px) {
+  .register {
+    width: 20%; 
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .register {
+    width: 20%; 
+  }
+  .register .box {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .register {
+    width: 30%; 
+  }
+  .register .box {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .register {
+    width: 50%; 
+  }
+  .register .box {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .register {
+    width: 40%; 
+  }
+  .register .box {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .register {
+    width: 60%; 
+  }
+  .register .box {
+    display: none;
+  }
+}
+
+@media (max-width: 479px) {
+  .register {
+    width: 70%; 
+  }
+  .register .box {
+    display: none;
+  }
+}

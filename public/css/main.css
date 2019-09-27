@@ -1,0 +1,244 @@
+.gallery {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.gallery .booth #canvasMain {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: 485px;
+    left: 0;
+    z-index: 10;
+}
+
+.gallery .booth #canvasTop {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    bottom: 970px;
+    left: 0;
+    z-index: 5;
+}
+
+.gallery .filters {
+    width: 640px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.gallery .filters img {
+    height: 30px;
+    width: auto;
+    padding: 10px;
+    margin: 0 20px;
+    display: inline-block;
+}
+
+.gallery .booth {
+    display: block;
+    height: 480px;
+    width: 640px;
+    margin: 20px 0px;
+}
+
+.gallery .preview {
+    margin: 0 auto;
+    width: 640px;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.preview img {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    width: 300px;
+    margin: 15px auto;
+}
+
+.buttons .boothButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons .boothButtons p {
+    margin: 0;
+}
+
+.buttons i {
+    color: #8E8D8A;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .gallery .booth {
+        display: block;
+        height: 400px;
+        width: 480px;
+        margin: 20px auto;
+    }
+
+    .gallery .booth #canvasMain {
+        position: relative;
+        bottom: 365px;
+        height: 360px;
+        width: 480px;
+    }
+    
+    .gallery .booth #canvasTop {
+        position: relative;
+        bottom: 730px;
+        height: 360px;
+        width: 480px;
+    }
+
+    .gallery .booth #video {
+        height: 360px;
+        width: 480px;
+        margin: 0 auto;
+    }
+
+    .gallery .filters {
+        width: 450px;
+        margin: 0 auto;
+    }
+    
+    .gallery .preview {
+        width: 450px;
+    }
+    
+    .preview img {
+        height: 90px;
+        width: 90px;
+        margin: 25px;
+    }
+
+    .alert {
+        width: 480px;
+        margin: 0 0 25px 0;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .gallery .booth {
+        display: block;
+        height: 300px;
+        width: 320px;
+        margin: 20px auto;
+    }
+
+    .gallery .booth #canvasMain {
+        position: relative;
+        bottom: 245px;
+        height: 240px;
+        width: 320px;
+    }
+    
+    .gallery .booth #canvasTop {
+        position: relative;
+        bottom: 490px;
+        height: 240px;
+        width: 320px;
+    }
+
+    .gallery .booth #video {
+        height: 240px;
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .gallery .filters {
+        width: 380px;
+        margin: 0 auto;
+    }
+    
+    .gallery .preview {
+        width: 380px;
+    }
+    
+    .preview img {
+        height: 90px;
+        width: 90px;
+        margin: 25px;
+    }
+
+    .alert {
+        width: 250px;
+    }
+}
+
+@media (max-width: 479px) {
+    .gallery .booth {
+        display: block;
+        height: 300px;
+        width: 320px;
+        margin: 20px auto;
+    }
+
+    .gallery .booth #canvasMain {
+        position: relative;
+        bottom: 245px;
+        height: 240px;
+        width: 320px;
+    }
+    
+    .gallery .booth #canvasTop {
+        position: relative;
+        bottom: 490px;
+        height: 240px;
+        width: 320px;
+    }
+
+    .gallery .booth #video {
+        height: 240px;
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .gallery .filters {
+        width: 250px;
+        margin: 0 auto;
+    }
+    
+    .gallery .preview {
+        width: 250px;
+    }
+    
+    .preview img {
+        height: 50px;
+        width: 50px;
+        margin: 15px;
+    }
+
+    .alert {
+        width: 250px;
+        font-size: 10px;
+    }
+}
